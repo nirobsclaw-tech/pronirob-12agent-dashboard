@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Nirob - 12-Agent Team Dashboard</title>
+    <meta http-equiv="refresh" content="0; url=dashboard.html">
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            color: white;
+            text-align: center;
+        }
+        .loader {
+            border: 4px solid rgba(255,255,255,0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>🎯 Pro Nirob Team Dashboard</h2>
+        <div class="loader"></div>
+        <p>Loading your 12-agent business system...</p>
+        <p style="font-size: 12px; opacity: 0.8;">Redirecting to dashboard...</p>
+    </div>
+    <script>
+        setTimeout(() => {
+            window.location.href = 'dashboard.html';
+        }, 2000);
+    </script>
+</body>
+</html>
